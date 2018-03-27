@@ -10,7 +10,30 @@ http://patorjk.com/games/snake
 Source code is available here: https://github.com/patorjk/JavaScript-Snake
 
 --> 
-    <title>JavaScript Snake</title>
+    <title>Snake</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/" onclick="document.location='site.html';return false" >Accueil</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/" onclick="document.location='pistes.html';return false">Pistes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/" onclick="document.location='outils.html';return false">Outils</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/" onclick="document.location='documents.html';return false">Documents</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/" onclick="document.location='autre.html';return false">Autre</a>
+    </li>
+  </ul>
+</nav>
     <link rel=stylesheet id=style type=text/css href=./css/main-snake.css />
     <button onclick=getTheme()>Click to use this theme.</button>
     <select id="select">
@@ -19,6 +42,7 @@ Source code is available here: https://github.com/patorjk/JavaScript-Snake
     </select>
     <div id="mode-wrapper">Select which mode you would like to play in.<br /><button id="Easy">Easy</button><br /><button id="Medium">Medium</button><br /><button id="Difficult">Difficult</button></div>
 <button id="high-score">Get your current high score for this game.</button>
+
 <script>
 function getTheme () {
     function changeTheme (Theme) {
@@ -44,8 +68,10 @@ if (navigator.onLine && window.location.hostname === 'patorjk.com') {
     })();
 }
 </script>
+
 </head>
-<body>
+<body style="background-color: rgb(80, 82, 117);">
+
     <div id="game-area" tabindex="0">
     </div>
     <script type="text/javascript" src="./js/snake.js"></script>
