@@ -7,8 +7,9 @@ h1 {
     color: white;
 }
 p {
-    color: white;
+    color: #A9A9A9;
     font: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 90%;
 }
 </style>
 
@@ -17,21 +18,24 @@ p {
 <SCRIPT src="connecter.js" LANGUAGE="JavaScript"></SCRIPT>
 <SCRIPT src="loginsite.js" LANGUAGE="JavaScript"></SCRIPT>
 <SCRIPT src="cachecache.js" LANGUAGE="JavaScript"></SCRIPT>
-
+<link rel="stylesheet" type="text/css" href="login.css">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="pub.js" language="JavaScript"></script>
+</HEAD>
 <BODY>
-<CENTER>
 
-<FORM name=login>
-<TABLE width=225 border=1 cellpadding=3>
-<tr><td colspan=2><CENTER><FONT color="#fff"size="+2"><b>Connexion</b></FONT></CENTER></td></tr>
-<tr><td><font color="#fff">Pseudo:</font></td><td><input type=text name=username></td></tr>
-<tr><td><font color="#fff">Mot de passe:</font></td><td><input type=PASSWORD name=password></td></tr>
-<tr><td colspan=2 align=center><input type=button value="Connexion!" onClick="Login()"></td></tr>
-</TABLE>
-</FORM>
-<p>Rejoignez-nous sur le serveur discord pour avoir les identifiants<br>
+<div class="login">
+	<h1>Login</h1>
+    <form method="post" name=login>
+    	<input type="text" name="username" placeholder="Pseudo" required="required" />
+        <input type="password" name="password" placeholder="Mot de passe" required="required" />
+        <input type="button" value="Connexion!" class="btn btn-primary btn-block btn-large" onClick="Login()">
+    </form>
+</div>
+<CENTER>
+<p>Pour avoir un compte, rejoignez ce serveur discord:<br>
 <a target="_blank" href="https://discord.gg/Z2JBZHY">~Myst&egrave;re Trash~</a></p>
-<p>Ou ajoutez moi sur discord <br><b>KyaBoomy#7230</b></p>
+<p>Ou ajoutez moi! <br><b>KyaBoomy#7230</b></p>
 </CENTER>
 </BODY>
 </HTML>
